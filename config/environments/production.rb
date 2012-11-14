@@ -1,5 +1,6 @@
 RedirDemo::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+  Redirect.host = 'http://redir-demo1.herokuapp.com/'
 
   # Code is not reloaded between requests
   config.cache_classes = true
