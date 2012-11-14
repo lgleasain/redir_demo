@@ -23,7 +23,7 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'sqllite3'
+  gem 'sqlite3'
 end
 
 gem 'jquery-rails'
