@@ -58,6 +58,10 @@ development:
 production:
   sessions:
     default:
-      uri: <%= ENV['MONGOHQ_URL'] %>
+      hosts:
+        - alex.mongohq.com:10019
+      username: heroku
+      password: ca2667f0dab15f18c873810f90bc382b
+      database: app9209061
   options:
     skip_version_check: true
