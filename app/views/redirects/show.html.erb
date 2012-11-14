@@ -1,0 +1,19 @@
+
+Your Shortened URL
+
+<%= @redirect.shortened_url %>
+
+</br>
+</br>
+<table>
+  <tr>
+    <th>visits</th>
+    <th>browser</th>
+  </tr>
+  <% @browser_visits.each do |browser| %>
+    <tr>
+    <td> <%= browser.last %></td>
+    <td> <%= browser.first %></td>
+  </tr>
+  <% end %>
+</table>

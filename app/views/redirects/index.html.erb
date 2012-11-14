@@ -1,0 +1,14 @@
+Current Redirects
+
+<table>
+  <tr>
+    <th>Shortened Url</th>
+    <th>Original Url</th>
+  </tr>
+  <% @redirects.each do |redirect| %>
+    <tr>
+    <td> <%= link_to redirect.shortened_url, redirect_url(redirect.shortened_id) %></td>
+    <td> <%= redirect.original_url %></td>
+  </tr>
+  <% end %>
+</table>
